@@ -12,8 +12,8 @@ for root, dirnames, filenames in os.walk(talksDir):
 		if filename != 'exclude.txt' and filename != 'README.txt': 
 			if not os.path.exists(os.path.join(root,os.path.splitext(filename)[0]+'.pdf')):
 				print "generating " + os.path.splitext(filename)[0]+'.pdf'
-				createTalk.joinPDF(os.path.join(root, filename),dbDir)					
+				createPDFPresentation.joinPDF(os.path.join(root, filename),dbDir)					
 			else:
 				if os.path.getmtime(os.path.join(root,os.path.splitext(filename)[0]+'.pdf')) < os.path.getmtime(os.path.join(root,os.path.splitext(filename)[0]+'.txt')):
 					print "updating " + os.path.splitext(filename)[0]+'.pdf'
-					createTalk.joinPDF(os.path.join(root, filename),dbDir)
+					createPDFPresentation.joinPDF(os.path.join(root, filename),dbDir)
