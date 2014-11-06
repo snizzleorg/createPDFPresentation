@@ -4,3 +4,5 @@ consist of two (three) separate scripts
  * createPDFPresentation joins pdf files found in a directory structure the files to be used are specified in a txt file
  * createPDFPresentations automates the process by creating a pdf for all txt files found in a specified directory
  
+Licensed under Do What the Fuck You Want to Public License
+http://www.wtfpl.net
